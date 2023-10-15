@@ -1,0 +1,33 @@
+<div class="programm-container">
+  <h1 class="castilla">programm</h1>
+
+  <div *ngIf="!showDetails" class="days-list">
+    <ul>
+      <li class="day" (click)="selectDay('montag')">
+        <h3 class="didot">Montag, 30. Oktober</h3>
+        <img src="assets/montag.png" alt="Montag Image" class="day-image">
+      </li>
+      <li class="day" (click)="selectDay('dienstag')">
+        <h3 class="didot">Dienstag, 31. Oktober</h3>
+        <img src="assets/dienstag.png" alt="Dienstag Image" class="day-image">
+      </li>
+      <li class="day" (click)="selectDay('mittwoch')">
+        <h3 class="didot">Mittwoch, 1. November</h3>
+        <img src="assets/mittwoch.png" alt="Mittwoch Image" class="day-image">
+      </li>
+      <li class="day" (click)="selectDay('donnerstag')">
+        <h3 class="didot">Donnerstag, 2. November</h3>
+        <img src="assets/donnerstag.png" alt="Donnerstag Image" class="day-image">
+      </li>
+    </ul>
+  </div>
+
+
+  <div *ngIf="showDetails" class="day-details">
+    <h3>{{ selectedDay.title }}</h3>
+    <ul>
+      <li *ngFor="let detail of selectedDay.details">{{ detail }}</li>
+    </ul>
+    <button (click)="backToList()">Back to List</button>
+  </div>
+</div>

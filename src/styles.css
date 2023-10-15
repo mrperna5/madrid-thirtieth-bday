@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Take up the full viewport height */
+}
+
+.didot {
+  font-family: 'Didot', serif;
+  font-size: 32px;
+}
+
+.castilla {
+  font-family: 'British Castilla', cursive;
+  font-size: 48px;
+}
+
+.header {
+  background-image: url('assets/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px; /* Adjust based on the actual height of your image or desired display size */
+}
+
+.footer {
+  background-image: url('assets/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px; /* Adjust based on the actual height of your */
+}
+
+/* ... other styles ... */
+
+@media screen and (max-width: 320px) {
+  /* Styles for smaller screens like iPhone 5/SE */
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  /* Styles for medium-sized screens like most smartphones */
+}
+
+
+/**~~~~~~~* Fonts *~~~~~~**/
+@font-face {
+  font-family: 'Didot';
+  src: url('assets/fonts/GFSDidot-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'British Castilla';
+  src: url('assets/fonts/BritishCastillaScript-VGg8x.otf') format('truetype');
+}

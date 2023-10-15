@@ -1,0 +1,23 @@
+.home-container {
+  display: flex;
+  flex-direction: column;  /* Stack children vertically */
+  align-items: center;     /* Center-align children horizontally */
+  justify-content: center; /* Center-align children vertically */
+  gap: 40px;               /* Uniform gap between all child elements */
+  margin-top: 30px;
+}
+
+.didot {
+  font-family: 'Didot LT Std', serif;
+  font-size: 32px;
+  align-self: flex-end;
+  margin-right: 60px;
+}
+
+
+.event-details {
+  font-family: 'Didot LT Std', serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5; /* Add some line-height for better readability */
+}

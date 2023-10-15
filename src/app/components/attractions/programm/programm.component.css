@@ -1,0 +1,66 @@
+.programm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.castilla {
+  font-family: 'British Castilla', cursive;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.days-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.days-list li {
+  font-family: 'Didot LT Std', serif;
+  margin-bottom: 0px; /* Optional: Add spacing between list items */
+}
+
+.days-list h3 {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.days-list li::before {
+  content: '';
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-image: url('/../../../../assets/bulletpoint.png');
+  background-size: cover;
+  margin-right: 5px;   /* Spacing between the image and the text */
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.day {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.day-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.day-image {
+  margin-left: auto;
+  width: 35%;  /* Use the full width of its container */
+  max-width: 416px; /* Set the maximum width to its original width to maintain quality */
+  height: auto; /* Maintain the aspect ratio */
+}
