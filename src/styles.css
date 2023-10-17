@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 html, body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -13,6 +15,20 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;  /* Take up the full viewport height */
+  width: 100vw;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  width: 100%;
+  max-width: 1200px;
+  overflow-y: auto;
 }
 
 .didot {
@@ -25,38 +41,49 @@ body {
   font-size: 48px;
 }
 
-.header {
-  background-image: url('assets/header.png');
+.header, .footer {
+  width: 100%;
+  max-width: 1200px; /* Consistent with the content width */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px; /* Adjust based on the actual height of your image or desired display size */
+  background-position: center; /* Ensure images are centered */
+}
+
+.header {
+  background-image: url('assets/header.png');
+  height: 350px; /* Increased height for desktop */
 }
 
 .footer {
   background-image: url('assets/footer.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100px; /* Adjust based on the actual height of your */
+  height: 350px; /* Increased height for desktop */
 }
 
 /* ... other styles ... */
 
-@media screen and (max-width: 320px) {
-  /* Styles for smaller screens like iPhone 5/SE */
+@media screen and (max-width: 768px) {
+  .header, .footer {
+    height: 150px;
+  }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
-  /* Styles for medium-sized screens like most smartphones */
-}
+  @media screen and (max-width: 320px) {
+    /* Styles for smaller screens like iPhone 5/SE */
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    /* Styles for medium-sized screens like most smartphones */
+  }
 
 
-/**~~~~~~~* Fonts *~~~~~~**/
-@font-face {
-  font-family: 'Didot';
-  src: url('assets/fonts/GFSDidot-Regular.ttf') format('truetype');
-}
+  /**~~~~~~~* Fonts *~~~~~~**/
+  @font-face {
+    font-family: 'Didot';
+    src: url('assets/fonts/GFSDidot-Regular.ttf') format('truetype');
+  }
 
-@font-face {
-  font-family: 'British Castilla';
-  src: url('assets/fonts/BritishCastillaScript-VGg8x.otf') format('truetype');
-}
+  @font-face {
+    font-family: 'British Castilla';
+    src: url('assets/fonts/BritishCastillaScript-VGg8x.otf') format('truetype');
+  }
+
