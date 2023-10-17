@@ -26,7 +26,7 @@
   <div *ngIf="showDetails" class="day-details">
     <img [src]="selectedDay.image" alt="{{ selectedDay.title}}" class="day-image">
     <ul>
-      <li style="font-size: 20px">{{ selectedDay.title }}</li>
+      <li style="font-size: 20px; font-weight: bold; padding-bottom: 20px">{{ selectedDay.title }}</li>
       <ul>
         <li *ngFor="let detail of selectedDay.details">{{ detail }}</li>
       </ul>
