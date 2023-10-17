@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 interface DayDetail {
   title: string;
   details: string[];
+  image: string;
 }
 
 interface DayDetails {
@@ -27,7 +28,8 @@ export class ProgrammComponent {
         '21:00 – 22:00 Flughafen – Unterkunft',
         '22:45 Abendessen: Caluana',
         'Bar: Sala equis'
-      ]
+      ],
+      image: 'assets/montag.png'
     },
     dienstag: {
       title: 'Dienstag, 31. Oktober',
@@ -43,7 +45,8 @@ export class ProgrammComponent {
         '- Siesta -',
         'Abendessen: 21:30 La Bodega de los secretos',
         'Bar: Ficus Bar, Viva Madrid, La Venecia'
-      ]
+      ],
+      image: 'assets/dienstag.png'
     },
     mittwoch: {
       title: 'Mittwoch, 1. November',
@@ -59,7 +62,8 @@ export class ProgrammComponent {
         'Predrinks: The hat',
         'Abendessen: 22:00 Raimunda',
         'Bar: Salvador Bachiller'
-      ]
+      ],
+      image: 'assets/mittwoch.png'
     },
     donnerstag: {
       title: 'Donnerstag, 2. November',
@@ -67,7 +71,8 @@ export class ProgrammComponent {
         '8:00 Frühstück to go',
         '8:30 Abfahrt zum Flughafen',
         '11:45 Madrid | 14:10 Zürich | iberia'
-      ]
+      ],
+      image: 'assets/donnerstag.png'
     }
   }
 

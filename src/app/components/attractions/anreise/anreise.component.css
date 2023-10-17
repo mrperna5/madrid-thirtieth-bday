@@ -27,6 +27,14 @@ h2, p {
   /*margin-left: 30px;*/
 }
 
+.menu-items li {
+  display: flex;      /* Turns on flex for direct children of li */
+  align-items: flex-start; /* Aligns content to the top of li */
+  font-family: 'Didot LT Std', serif;
+  font-size: 16px;
+}
+
+
 .menu-items li::before {
   content: '';           /* Resets the content so it doesn't display the default bullet */
   display: inline-block;

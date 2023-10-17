@@ -4,14 +4,14 @@
   align-items: center;     /* Center-align children horizontally */
   justify-content: center; /* Center-align children vertically */
   gap: 60px;               /* Uniform gap between all child elements */
-  /*margin-top: -100px;*/
+  margin-top: 10px;
 }
 
 .didot {
   font-family: 'Didot LT Std', serif;
-  font-size: 28px;
+  font-size: 42px;
   align-self: flex-end;
-  margin-right: 0px;
+  margin-right: 20px;
 }
 
 

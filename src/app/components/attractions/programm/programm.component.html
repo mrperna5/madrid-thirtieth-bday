@@ -24,10 +24,14 @@
 
 
   <div *ngIf="showDetails" class="day-details">
-    <h3>{{ selectedDay.title }}</h3>
+    <img [src]="selectedDay.image" alt="{{ selectedDay.title}}" class="day-image">
     <ul>
-      <li *ngFor="let detail of selectedDay.details">{{ detail }}</li>
+      <li style="font-size: 20px">{{ selectedDay.title }}</li>
+      <ul>
+        <li *ngFor="let detail of selectedDay.details">{{ detail }}</li>
+      </ul>
     </ul>
+
     <button (click)="backToList()">Zurück</button>
   </div>
 </div>
