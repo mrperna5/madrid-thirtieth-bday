@@ -73,7 +73,7 @@
   display: inline-block;
   height: 16px;
   width: 16px;
-  background-image: url('/../../../../assets/bulletpoint.png');
+  background-image: url('/assets/bulletpoint.png');
   background-size: cover;
   margin-right: 5px; /* Spacing between the image and the text */
   padding-bottom: 5px;
