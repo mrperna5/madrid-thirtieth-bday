@@ -58,37 +58,21 @@
   width: 100%;
 }
 
-.day-details img {
-  margin-bottom: -30px;
-}
-
 .day-details li {
-  list-style-type: none;
   font-family: 'Didot LT Std', serif;
   margin-bottom: 0px; /* Optional: Add spacing between list items */
 }
 
-.day-details > ul > li::before {
+.day-details li::before {
   content: '';
   display: inline-block;
   height: 16px;
   width: 16px;
-  background-image: url('/assets/bulletpoint.png');
+  background-image: url('/../../../../assets/bulletpoint.png');
   background-size: cover;
   margin-right: 5px; /* Spacing between the image and the text */
   padding-bottom: 5px;
   vertical-align: middle;
-}
-
-
-.day-details ul ul li {
-  margin-top: 10px;
-  content: none; /* Reset the custom bullet for second level */
-  list-style-type: disc;
-}
-
-.day-details > ul > li > ul {
-  margin-top: 20px;  /* Adjust this value to increase or decrease the space as needed */
 }
 
 .day-image {
