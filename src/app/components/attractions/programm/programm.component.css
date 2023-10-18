@@ -5,6 +5,10 @@
   gap: 20px;
 }
 
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
 .castilla {
   font-family: 'British Castilla', cursive;
   font-size: 48px;
@@ -21,7 +25,7 @@
 }
 
 .days-list li {
-  font-family: 'Didot LT Std', serif;
+  font-family: "Playfair Display", serif;
   margin-bottom: 0px; /* Optional: Add spacing between list items */
 }
 
@@ -59,8 +63,9 @@
 }
 
 .day-details li {
-  font-family: 'Didot LT Std', serif;
+  font-family: "Playfair Display", serif;
   margin-bottom: 0px; /* Optional: Add spacing between list items */
+  list-style-type: none;
 }
 
 .day-details li::before {
@@ -73,6 +78,20 @@
   margin-right: 5px; /* Spacing between the image and the text */
   padding-bottom: 5px;
   vertical-align: middle;
+}
+
+#details-head {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px
+}
+
+#details-list-items li::before {
+  display: none;
+}
+
+#details-list-items li {
+  list-style-type: disc;
 }
 
 .day-image {

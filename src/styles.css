@@ -87,3 +87,12 @@ body {
     src: url('assets/fonts/BritishCastillaScript-VGg8x.otf') format('truetype');
   }
 
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Playfair Display Italic';
+    src: url('assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  }
