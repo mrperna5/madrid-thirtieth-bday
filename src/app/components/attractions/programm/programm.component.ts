@@ -37,7 +37,7 @@ export class ProgrammComponent {
         'Frühstück: Pum pum Bakery',
         'Retiro',
         'Gran via, Alcala, Cibelles',
-        '15:00 Hardin de Diana ',
+        '15:00 Jardín de Diana ',
         'Callao, Gourmet Experiences',
         'Opera, Plaza Mayor, Plaza del Sol',
         'Mittagessen: Mercado San Miguel',
